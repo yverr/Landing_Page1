@@ -9,14 +9,26 @@ body {
     padding: 0;
 }
 
-header,
+header {
+    background-image: linear-gradient(rgba(13, 12, 59, 0.349),
+    rgba(149, 208, 250, 0.109)), url(./images/f67c5bcf0e2917240de3f87cb60a45e0.jpg);
+    background-repeat: no-repeat;
+    /* background-position:; */
+    background-attachment: fixed;
+    background-size:contain;
+    background-size: cover;
+    background-position: center;
+    background-position-y: top;
+
+}
+
 footer {
-    background-color: #1F2937;
+    background-color:#1b1b1b;
 }
 
 .topHeader {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
     margin-top: 10px;
@@ -24,11 +36,12 @@ footer {
 }
 
 .headerLogo {
-    font-size: 24px;
+    font-size: 35px;
     color: #ffff;
     margin: 16px;
     flex-shrink: 0;
     margin-right: 250px;
+    margin-left: 70px;
 }
 
 .headerLinks {
@@ -36,11 +49,13 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     flex-shrink: 0;
+    margin-right: 30px;
 }
 
 ul li {
     display: inline;
     list-style: none;
+    margin-left: 10px;
 }
 
 ul li a {
@@ -48,66 +63,89 @@ ul li a {
     text-decoration: none;
     font-size: 18px;
     color: #E5E7EB;
-    margin: 15px;
+    margin: 30px;
 }
 
 .bottomHeader {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     margin: 32px;
-    margin-bottom: 100px;
+    margin-bottom: 180px;
+    margin-top: 80px;
 
 }
 
 
 .leftSide {
-    width: 450px;
+    width: 650px;
     align-items: baseline;
-    margin: 30px;
+    margin: 40px;
+    margin-right: 150px;
 }
 
 .mainTitle {
-    font-size: 48px;
+    font-size: 65px;
     font-weight: 2000;
     color: #F9FAF8;
-    margin-bottom: 0;
+    margin-bottom: -2px;
     text-wrap: wrap;
 }
 
 .subtext {
-    font-size: 18px;
+    font-size: 20px;
     color: #E5E7EB;
 }
-
+/* 
 .imagePlaceholder {
     object-fit: fill;
     background: rgb(109, 115, 121);
     width: 550px;
     height: 250px;
-    margin: 55px;
+    margin: 65px;
   
-}
+} */
 
 .signUpOne, 
 .signUpButtonTwo {
     font-size: 18px;
-    background-color: #3882f6;
+    background-color: #5B73BF;
     color: white;
     font-weight: bolder;
     padding: 11px 36px;
     border-radius: 10px;
     border: 3px solid;
+    border-color: #1f293721;
+}
+
+.signUpOne a {
+    text-decoration: none;
+    color: white;
+}
+
+.signUpOne:hover {
+    background-color: #1f29374d;
     border-color: #1F2937;
+    cursor: pointer;
+    color: #5c5c5c;
+}
+
+a:hover {
+    color: #B4C8E9;
+}
+
+.signUpOne a:hover {
+    color: rgb(27, 26, 41);
 }
 
 .section-1 {
-    margin-bottom: 64px;
+    padding-bottom: 115px;
+    background-color: #1b1b1b;
 }
 
 .title {
     font-size: 36px;
     font-weight: 1000;
-    color: #1F2937;
+    color: #e1e1e1;
     display: flex;
     justify-content: center;
     margin: 64px;
@@ -124,8 +162,15 @@ ul li a {
     width: 170px;
     height: 170px;
     border: 5px solid;
-    border-color: #3882f6;
+    border-color: #978697;
     border-radius: 15px;
+}
+
+.img:hover {
+    border: 6px solid;
+    border-color: #635763;
+    margin-bottom: -2px;
+    cursor: pointer;
 }
 
 .info {
@@ -138,11 +183,11 @@ ul li a {
     text-align: center;
     font-size: 18px;
     font-weight: 500;
-    color: #676767;
+    color: #868686;
 }
 
 .section-2 {
-    background-color: #E5E7EB;
+    background-color: #1a1b23;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -160,6 +205,7 @@ ul li a {
     font-weight: 300;
     display: inline-block;
     margin-bottom: -36px;
+    color: #F9FAF8;
 }
 
 .author {
@@ -167,6 +213,7 @@ ul li a {
     font-weight: bold;
     display: flex;
     justify-content: end;
+    color: #F9FAF8;
 }
 
 .section-3 {
@@ -175,12 +222,13 @@ ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #1b1b1b;
 }
 
 .blueContainer {
     width: 1100px;
     height: 150px;
-    background-color: #3882f6;
+    background-color: #232533;
     border-radius: 15px;
     display: flex;
     justify-content: center;
@@ -215,6 +263,12 @@ ul li a {
 
 .signUpButtonTwo {
     border-color: #F9FAF8;
+    background-color: #232533;
+}
+
+.signUpButtonTwo:hover {
+    background-color: #322F44;
+    text-shadow: 5px white;
 }
 
 footer {
@@ -222,6 +276,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 
 }
 
